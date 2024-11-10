@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "weird_items",
+  "version": "${version}",
+  "name": "奇怪的物品",
+  "description": "一些奇怪的物品，作为mod开发的学习!",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/weird_items/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "qingzhixing.weird_items.client.Weird_itemsClient"
+    ],
+    "main": [
+      "qingzhixing.weird_items.Weird_items"
+    ]
+  },
+  "mixins": [
+    "weird_items.mixins.json",
+    {
+      "config": "weird_items.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
