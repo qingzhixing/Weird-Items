@@ -7,14 +7,14 @@
   "authors": [],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/weird_items/icon.png",
+  "icon": "assets/weird_items/textures/item/shaved_ice.png",
   "environment": "*",
   "entrypoints": {
     "client": [
       "qingzhixing.weird_items.client.Weird_itemsClient"
     ],
     "main": [
-      "qingzhixing.weird_items.Weird_items"
+      "qingzhixing.weird_items.WeirdItemsEntry"
     ]
   },
   "mixins": [

@@ -23,6 +23,6 @@ public final class ModItemRegister {
     }
 
     public static void initialize() {
-        ModItem.initialize();
+        WeirdItems.initialize();
     }
 }
