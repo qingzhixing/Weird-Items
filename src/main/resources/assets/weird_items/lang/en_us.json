@@ -2,5 +2,7 @@
   "itemGroup.weird_items.title": "Weird Items",
   "item.weird_items.shaved_ice": "Shaved Ice",
   "tooltip.weird_items.shaved_ice": "Favor in Summer!",
-  "tooltip.weird_items.shaved_ice.desc": "You can right click ice-related block to upgrade it!"
+  "tooltip.weird_items.shaved_ice.desc": "You can right click ice-related block to upgrade it!",
+  "item.weird_items.prismatic_shard": "Prismatic Shard",
+  "item.weird_items.prismatic_shard.tooltip": "A rainbow stone from another universe ( Stardew Valley )"
 }

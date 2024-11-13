@@ -19,6 +19,7 @@ public final class WeirdItemGroup {
                     .displayName(Text.translatable("itemGroup.weird_items.title"))
                     .entries(((displayContext, entries) -> {
                         entries.add(WeirdItems.SHAVED_ICE);
+                        entries.add(WeirdItems.PRISMATIC_SHARD);
                     }))
                     .build()
     );
