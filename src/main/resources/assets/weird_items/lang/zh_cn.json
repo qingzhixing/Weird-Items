@@ -1,5 +1,6 @@
 {
   "itemGroup.weird_items.title": "奇怪的物品",
   "item.weird_items.shaved_ice": "刨冰",
-  "tooltip.weird_items.shaved_ice": "夏日的最爱!"
+  "tooltip.weird_items.shaved_ice": "夏日的最爱!",
+  "tooltip.weird_items.shaved_ice.desc": "右键点击与冰雪相关的物品来升级它!"
 }
