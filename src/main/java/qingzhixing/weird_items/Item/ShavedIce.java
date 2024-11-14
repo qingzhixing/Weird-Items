@@ -16,8 +16,10 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.UseAction;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
+import qingzhixing.weird_items.Particle.WeirdParticleHelper;
 
 import java.util.HashMap;
 import java.util.List;
@@ -115,16 +117,16 @@ public class ShavedIce extends Item {
             BlockSoundGroup blockSoundGroup = targetBlockState.getSoundGroup();
             context.getWorld().playSound(player, targetBlockPos, blockSoundGroup.getBreakSound(), SoundCategory.BLOCKS);
 
+            Random random = context.getWorld().getRandom();
+
             // spawn particles
-            for (int i = 0; i < PARTICLE_COUNT; i++) {
-                double x = targetBlockPos.getX() + 0.5 + (Math.random() - 0.5);
-                double y = targetBlockPos.getY() + 1.2 + (Math.random() - 0.5) * 0.2;
-                double z = targetBlockPos.getZ() + 0.5 + (Math.random() - 0.5);
-                double vx = (Math.random() - 0.5);
-                double vy = (Math.random() - 0.5);
-                double vz = (Math.random() - 0.5);
-                context.getWorld().addParticle(ParticleTypes.COMPOSTER, true, x, y, z, vx, vy, vz);
-            }
+            WeirdParticleHelper.AddParticle(
+                    random,
+                    targetBlockPos,
+                    ParticleTypes.COMPOSTER,
+                    PARTICLE_COUNT,
+                    context.getWorld()
+            );
 
             player.emitGameEvent(GameEvent.BLOCK_CHANGE, player);
 

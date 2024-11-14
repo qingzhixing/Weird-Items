@@ -16,7 +16,7 @@ public final class WeirdItems {
             "prismatic_shard"
     );
     public static final Item GALAXY_SWORD = ModItemRegister.register(
-            new SwordItem(PrismaticMaterial.INSTANCE, 10, 2, new FabricItemSettings()),
+            new SwordItem(PrismaticMaterial.INSTANCE, 8, 1, new FabricItemSettings()),
             "galaxy_sword"
     );
 

@@ -1,13 +1,13 @@
 package qingzhixing.weird_items.Item;
 
-import net.fabricmc.loader.impl.util.log.Log;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import org.apache.logging.log4j.Level;
 
+import static qingzhixing.weird_items.ModInfo.LOGGER;
 import static qingzhixing.weird_items.ModInfo.MOD_ID;
-import static qingzhixing.weird_items.ModInfo.MOD_LOG_CATEGORY;
 
 public final class ModItemRegister {
     public static Item register(Item item, String item_id) {
@@ -16,7 +16,7 @@ public final class ModItemRegister {
         // Register Item
         var registry = Registry.register(Registries.ITEM, itemID, item);
 
-        Log.info(MOD_LOG_CATEGORY, "Registered item: " + item_id);
+        LOGGER.log(Level.INFO, String.format("Registered item: %s", item_id));
 
         // Return registered item
         return registry;
