@@ -21,7 +21,7 @@
     "weird_items.mixins.json",
     {
       "config": "weird_items.client.mixins.json",
-      "environment": "client"
+      "environment": "*"
     }
   ],
   "depends": {

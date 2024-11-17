@@ -20,6 +20,11 @@ public final class WeirdItems {
             "galaxy_sword"
     );
 
+    public static final Item INFINITE_WATER_BUCKET = ModItemRegister.register(
+            new InfiniteWaterBucket(new FabricItemSettings()),
+            "infinite_water_bucket"
+    );
+
     public static void initialize() {
     }
 }

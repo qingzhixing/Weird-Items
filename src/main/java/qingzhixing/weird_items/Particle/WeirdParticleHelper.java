@@ -15,7 +15,7 @@ public final class WeirdParticleHelper {
             double vx = (MathHelper.nextBetween(random, -1.0F, 1.0F) - 0.5);
             double vy = (MathHelper.nextBetween(random, -1.0F, 1.0F) - 0.5);
             double vz = (MathHelper.nextBetween(random, -1.0F, 1.0F) - 0.5);
-            world.addParticle(particle, true, particle_x, particle_y, particle_z, vx, vy, vz);
+            world.addParticle(particle, particle_x, particle_y, particle_z, vx, vy, vz);
         }
     }
 }

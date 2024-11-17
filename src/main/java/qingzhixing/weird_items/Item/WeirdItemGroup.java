@@ -22,6 +22,7 @@ public final class WeirdItemGroup {
                         entries.add(WeirdItems.SHAVED_ICE);
                         entries.add(WeirdItems.PRISMATIC_SHARD);
                         entries.add(WeirdItems.GALAXY_SWORD);
+                        entries.add(WeirdItems.INFINITE_WATER_BUCKET);
                     }))
                     .build()
     );

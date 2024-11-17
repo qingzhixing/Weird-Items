@@ -1,10 +1,12 @@
 {
   "itemGroup.weird_items.title": "Weird Items",
   "item.weird_items.shaved_ice": "Shaved Ice",
-  "tooltip.weird_items.shaved_ice": "Favor in Summer!",
-  "tooltip.weird_items.shaved_ice.desc": "You can right click ice-related block to upgrade it!",
   "item.weird_items.prismatic_shard": "Prismatic Shard",
   "item.weird_items.prismatic_shard.tooltip": "A rainbow stone from another universe ( Stardew Valley )",
   "item.weird_items.galaxy_sword": "Galaxy Sword",
-  "enchantment.weird_items.frost": "Frost"
+  "item.weird_items.infinite_water_bucket": "Infinite Water Bucket",
+  "tooltip.weird_items.shaved_ice": "Favor in Summer!",
+  "tooltip.weird_items.shaved_ice.desc": "You can right click ice-related block to upgrade it!",
+  "enchantment.weird_items.frost": "Frost",
+  "tooltip.weird_items.infinite_water_bucket.desc": "Engineering's favourite"
 }
