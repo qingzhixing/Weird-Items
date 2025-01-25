@@ -20,7 +20,9 @@ import qingzhixing.weird_items.Particle.WeirdParticleHelper;
 public class FrostEnchantment extends Enchantment {
     // 达到140冰冻值之后会产生冰冻伤害
     private static final int BASE_FROZEN_TICKS = 140;
-    private static final int MAX_FROZEN_TICKS = BASE_FROZEN_TICKS + 20 * 2 * 20;
+    private static final int FROZEN_TICK_PER_SECOND = 20 * 2;       // 每个游戏刻减少2霜冻值
+    private static final int FROZEN_TIME_MAX_SECONDS = 10;          // 最多霜冻10秒
+    private static final int MAX_FROZEN_TICKS = BASE_FROZEN_TICKS + FROZEN_TICK_PER_SECOND * FROZEN_TIME_MAX_SECONDS;
     private static final int FROZEN_PARTICLE_COUNT = 16;
 
     private static final BlockStateParticleEffect FROZEN_PARTICLE_EFFECT = new BlockStateParticleEffect(
@@ -51,8 +53,8 @@ public class FrostEnchantment extends Enchantment {
 
         if (target instanceof LivingEntity livingTarget) {
             var frozenTicks = livingTarget.getFrozenTicks();
-            var nextFrozenTicks = frozenTicks + (level) * 10;
-            livingTarget.setFrozenTicks(Math.max(nextFrozenTicks, MAX_FROZEN_TICKS));
+            var nextFrozenTicks = frozenTicks + (level + 1) * FROZEN_TICK_PER_SECOND;
+            livingTarget.setFrozenTicks(Math.min(nextFrozenTicks, MAX_FROZEN_TICKS));
             livingTarget.addStatusEffect(
                     new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * (2 + level), (level / 3)),
                     user
