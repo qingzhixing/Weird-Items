@@ -4,7 +4,6 @@ import net.fabricmc.api.ModInitializer;
 import qingzhixing.weird_items.Enchantment.ModEnchantmentRegister;
 import qingzhixing.weird_items.Item.ModItemRegister;
 import qingzhixing.weird_items.Item.WeirdItemGroup;
-import qingzhixing.weird_items.Recipes.WeirdItemRecipes;
 
 public class WeirdItemsEntry implements ModInitializer {
 
@@ -13,6 +12,5 @@ public class WeirdItemsEntry implements ModInitializer {
         ModItemRegister.initialize();
         WeirdItemGroup.initialize();
         ModEnchantmentRegister.initialize();
-        WeirdItemRecipes.initialize();
     }
 }
