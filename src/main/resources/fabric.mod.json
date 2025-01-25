@@ -10,6 +10,9 @@
   "icon": "assets/weird_items/textures/item/shaved_ice.png",
   "environment": "*",
   "entrypoints": {
+    "fabric-datagen": [
+      "qingzhixing.weird_items.ModDataGenerator"
+    ],
     "client": [
       "qingzhixing.weird_items.client.Weird_itemsClient"
     ],
@@ -17,13 +20,6 @@
       "qingzhixing.weird_items.WeirdItemsEntry"
     ]
   },
-  "mixins": [
-    "weird_items.mixins.json",
-    {
-      "config": "weird_items.client.mixins.json",
-      "environment": "*"
-    }
-  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",

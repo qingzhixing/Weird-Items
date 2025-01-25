@@ -103,3 +103,7 @@ publishing {
 kotlin {
     jvmToolchain(21)
 }
+
+fabricApi {
+    configureDataGeneration()
+}
