@@ -10,9 +10,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(MinecraftServer.class)
-public class ServerHelloWorldMessageMixin {
+public class ClientHelloWorldMessageMixin {
     @Unique
-    private static final Logger LOGGER = LogManager.getLogger(ServerHelloWorldMessageMixin.class);
+    private static final Logger LOGGER = LogManager.getLogger(ClientHelloWorldMessageMixin.class);
 
     @Inject(at = @At("HEAD"), method = "loadWorld()V")
     private void printLoadWorldMessage(CallbackInfo ci) {
