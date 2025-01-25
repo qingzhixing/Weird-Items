@@ -4,6 +4,7 @@
   "package": "qingzhixing.weird_items.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ServerHelloWorldMessageMixin"
   ],
   "injectors": {
     "defaultRequire": 1

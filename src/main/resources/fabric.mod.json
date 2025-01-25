@@ -6,6 +6,9 @@
   "description": "一些奇怪的物品，作为mod开发的学习!",
   "authors": [],
   "contact": {},
+  "mixins": [
+    "weird_items.mixins.json"
+  ],
   "license": "All-Rights-Reserved",
   "icon": "assets/weird_items/textures/item/shaved_ice.png",
   "environment": "*",
