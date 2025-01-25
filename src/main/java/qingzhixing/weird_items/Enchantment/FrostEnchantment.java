@@ -51,7 +51,7 @@ public class FrostEnchantment extends Enchantment {
 
         if (target instanceof LivingEntity livingTarget) {
             var frozenTicks = livingTarget.getFrozenTicks();
-            var nextFrozenTicks = frozenTicks + (level + 1) * 10;
+            var nextFrozenTicks = frozenTicks + (level) * 10;
             livingTarget.setFrozenTicks(Math.max(nextFrozenTicks, MAX_FROZEN_TICKS));
             livingTarget.addStatusEffect(
                     new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * (2 + level), (level / 3)),
