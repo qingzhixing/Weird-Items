@@ -12,7 +12,7 @@ public class PrismaticMaterial implements ToolMaterial {
     // 耐久
     @Override
     public int getDurability() {
-        return 514;
+        return 4514;
     }
 
     @Override
