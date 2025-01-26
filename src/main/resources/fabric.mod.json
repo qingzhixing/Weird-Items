@@ -14,7 +14,7 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "qingzhixing.weird_items.ModDataGenerator"
+      "qingzhixing.weird_items.DataGenerator.ModDataGenerator"
     ],
     "client": [
       "qingzhixing.weird_items.client.Weird_itemsClient"

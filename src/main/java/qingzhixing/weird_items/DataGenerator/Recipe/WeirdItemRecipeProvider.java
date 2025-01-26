@@ -1,4 +1,4 @@
-package qingzhixing.weird_items.Recipes;
+package qingzhixing.weird_items.DataGenerator.Recipe;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -13,9 +13,9 @@ import qingzhixing.weird_items.Item.WeirdItems;
 
 import java.util.function.Consumer;
 
-public final class WeirdItemRecipeGenerator extends FabricRecipeProvider {
+public final class WeirdItemRecipeProvider extends FabricRecipeProvider {
 
-    public WeirdItemRecipeGenerator(FabricDataOutput output) {
+    public WeirdItemRecipeProvider(FabricDataOutput output) {
         super(output);
     }
 
