@@ -4,7 +4,8 @@
   "package": "qingzhixing.weird_items.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "InfinityEnchantmentBucketMixin"
+    "EnchantmentMixin.EnchantmentMixin",
+    "EnchantmentMixin.InfinityEnchantmentBucketMixin"
   ],
   "server": [
   ],
