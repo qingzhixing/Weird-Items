@@ -5,7 +5,8 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "EnchantmentMixin.EnchantmentMixin",
-    "EnchantmentMixin.InfinityEnchantmentBucketMixin"
+    "EnchantmentMixin.InfinityEnchantmentBucketMixin",
+    "ItemMixin.InfinityBucketItemMixin"
   ],
   "server": [
   ],

@@ -9,6 +9,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.ItemStack;
 import net.minecraft.particle.BlockStateParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.BlockSoundGroup;
@@ -83,6 +84,13 @@ public class FrostEnchantment extends Enchantment {
         );
 
         super.onTargetDamaged(user, target, level);
+    }
+
+    @Override
+    public boolean isAcceptableItem(ItemStack stack) {
+        // 弓箭和武器都可以
+        return EnchantmentTarget.WEAPON.isAcceptableItem(stack.getItem())
+                || EnchantmentTarget.BOW.isAcceptableItem(stack.getItem());
     }
 
     @Override

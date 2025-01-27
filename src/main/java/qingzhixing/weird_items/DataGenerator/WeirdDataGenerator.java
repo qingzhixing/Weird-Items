@@ -10,7 +10,7 @@ import qingzhixing.weird_items.DataGenerator.Model.WeirdModelProvider;
 import qingzhixing.weird_items.DataGenerator.Recipe.WeirdItemRecipeProvider;
 
 // REF: https://wiki.fabricmc.net/tutorial:datagen_setup
-public class ModDataGenerator implements DataGeneratorEntrypoint {
+public class WeirdDataGenerator implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();

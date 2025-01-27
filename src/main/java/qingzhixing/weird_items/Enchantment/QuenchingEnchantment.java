@@ -7,6 +7,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
@@ -46,5 +47,12 @@ public class QuenchingEnchantment extends Enchantment {
                     1.0f
             );
         }
+    }
+    
+    @Override
+    public boolean isAcceptableItem(ItemStack stack) {
+        // 弓箭和武器都可以
+        return EnchantmentTarget.WEAPON.isAcceptableItem(stack.getItem())
+                || EnchantmentTarget.BOW.isAcceptableItem(stack.getItem());
     }
 }

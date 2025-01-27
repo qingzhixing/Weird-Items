@@ -10,8 +10,8 @@ import org.apache.logging.log4j.Logger;
 
 import static qingzhixing.weird_items.ModInfo.MOD_ID;
 
-public final class ModItemRegister {
-    private final static Logger LOGGER = LogManager.getLogger(ModItemRegister.class);
+public final class WeirdItemRegister {
+    private final static Logger LOGGER = LogManager.getLogger(WeirdItemRegister.class);
 
     public static Item register(Item item, String item_id) {
         // Create Identifier

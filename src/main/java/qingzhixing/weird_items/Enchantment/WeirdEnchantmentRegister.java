@@ -10,8 +10,8 @@ import org.apache.logging.log4j.Logger;
 
 import static qingzhixing.weird_items.ModInfo.MOD_ID;
 
-public final class ModEnchantmentRegister {
-    private final static Logger LOGGER = LogManager.getLogger(ModEnchantmentRegister.class);
+public final class WeirdEnchantmentRegister {
+    private final static Logger LOGGER = LogManager.getLogger(WeirdEnchantmentRegister.class);
 
     public static Enchantment register(Enchantment enchantment, String enchantment_id) {
         // Create Identifier
